@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="container">
+        <canvas id="canvas_lisaj"></canvas>
+        <div class="controls">
+            <img src="assets/Unicorn.png" alt="">
+            <h1>MENU</h1>
+            <div class="range-block">
+                <label for="aam">First amplitude</label>
+                <input min='0' max='100'   id="aam" type="range">
+            </div>
+
+            <div class="range-block">
+                <label for="bam">Second amplitude</label>
+                <input min='0' max='100'   id="bam" type="range">
+            </div>
+
+            <div class="range-block">
+                <label for="af">First frequency</label>
+                <input min='0' max='100'   id="af" type="range">
+            </div>
+
+            <div class="range-block">
+                <label for="bf">Second frequency</label>
+                <input min='0' max='100'   id="bf" type="range">
+            </div>
+
+            <div class="range-block" id="speed">
+                <label for="sp">Speed</label>
+                <input min='0' max='100'  id="sp" type="range">
+            </div>
+
+            <div class="color-block" id="color">
+                <label for="ct">Select color</label>
+                <input class="reset" id="ct" type="color">
+            </div>
+
+            <div class="range-block">
+                <label for="cb">Random colors</label>
+                <input id="cb" type="checkbox">
+            </div>
+
+            <div class="range-block">
+                <label for="tm">Speed force</label>
+                <input id="tm" type="checkbox">
+            </div>
+
+
+
+        </div>
+    </div>
+
+    <footer>
+        <div class="h"></div>
+    </footer>
+
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <script src="app.js"></script>
+</body>
+
+</html>
